@@ -30,6 +30,10 @@
 const course = useCourse()
 const route = useRoute()
 
+definePageMeta({
+  middleware: ['auth']
+});
+
 const chapter = computed(() => {
   return course.chapters.find(chapter => chapter.slug == route.params.chapterSlug)
 })
