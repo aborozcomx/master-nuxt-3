@@ -14,6 +14,9 @@ devDependencies:
   '@nuxtjs/tailwindcss':
     specifier: ^6.8.0
     version: 6.8.0(webpack@5.88.0)
+  '@pinia/nuxt':
+    specifier: ^0.4.11
+    version: 0.4.11(typescript@5.1.3)(vue@3.3.4)
   '@prisma/client':
     specifier: ^4.16.1
     version: 4.16.1
@@ -32,6 +35,9 @@ devDependencies:
   nuxt:
     specifier: ^3.6.0
     version: 3.6.0(@types/node@18.16.18)(typescript@5.1.3)
+  pinia:
+    specifier: ^2.1.4
+    version: 2.1.4(typescript@5.1.3)(vue@3.3.4)
   typescript:
     specifier: ^5.1.3
     version: 5.1.3
@@ -1289,6 +1295,19 @@ packages:
       - supports-color
       - ts-node
       - webpack
+    dev: true
+
+  /@pinia/nuxt@0.4.11(typescript@5.1.3)(vue@3.3.4):
+    resolution: {integrity: sha512-bhuNFngJpmBCdAqWguezNJ/oJFR7wvKieqiZrmmdmPR07XjsidAw8RLXHMZE9kUm32M9E6T057OBbG/22jERTg==}
+    dependencies:
+      '@nuxt/kit': 3.6.0
+      pinia: 2.1.4(typescript@5.1.3)(vue@3.3.4)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - rollup
+      - supports-color
+      - typescript
+      - vue
     dev: true
 
   /@pkgjs/parseargs@0.11.0:
@@ -5879,6 +5898,24 @@ packages:
   /pify@3.0.0:
     resolution: {integrity: sha512-C3FsVNH1udSEX48gGX1xfvwTWfsYWj5U+8/uK15BGzIGrKoUpghX8hWZwa/OFnakBiiVNmBvemTJR5mcy7iPcg==}
     engines: {node: '>=4'}
+    dev: true
+
+  /pinia@2.1.4(typescript@5.1.3)(vue@3.3.4):
+    resolution: {integrity: sha512-vYlnDu+Y/FXxv1ABo1vhjC+IbqvzUdiUC3sfDRrRyY2CQSrqqaa+iiHmqtARFxJVqWQMCJfXx1PBvFs9aJVLXQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.3.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.5.0
+      typescript: 5.1.3
+      vue: 3.3.4
+      vue-demi: 0.14.5(vue@3.3.4)
     dev: true
 
   /pinkie-promise@2.0.1:

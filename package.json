@@ -15,12 +15,14 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/supabase": "^0.3.7",
     "@nuxtjs/tailwindcss": "^6.8.0",
+    "@pinia/nuxt": "^0.4.11",
     "@prisma/client": "^4.16.1",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^18",
     "@vueuse/core": "^10.2.0",
     "@vueuse/nuxt": "^10.2.0",
     "nuxt": "^3.6.0",
+    "pinia": "^2.1.4",
     "typescript": "^5.1.3"
   }
 }
